@@ -1,28 +1,54 @@
-# AngularDesafioSmartFit
+# Smart Fit Frontend Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+![Smart Fit](./src/assets/images/svg/logo.svg)
 
-## Development server
+Resolução do desafio de Front-end da Smart Fit, foi usado o framework Angular para o desenvolvimento do programa.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## O desafio
 
-## Code scaffolding
+Foi necessário desenvolver uma página para buscar unidades abertas/fechadas.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+No desafio foram adicionadas as seguintes funcionalidades seguindo as regras de negócio definidas:
 
-## Build
+### Funcionalidades
+• Carrega unidades através do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) utilizando o método `GET`.
+• Busca por todas as unidades.
+• Busca por unidades com filtros.
+• Previsão do número de resultados encontrados.
+• Listagem das unidades encontradas após a busca.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Regras de negócio
+• Filtra unidades abertas ou fechadas.
+• Filtra unidades por período de funcionamento.
+• Exibe a mensagem "Nenhuma unidade encontrada" quando não há resultados.
+• Valida e exibe os ícones corretos de acordo com o status da unidade.
 
-## Running unit tests
+## Layout e Responsividade
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O layout foi baseado nos materiais disponibilizados, incluindo designs para dispositivos móveis e desktop, cores, imagens e fontes.
 
-## Running end-to-end tests
+O programa é responsivo para dispositivos móveis, tablets e desktops.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Como Executar
 
-## Further help
+Para executar o programa localmente, siga os passos abaixo:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# Angular-SmartFit-Challenge
+1. Clone este repositório:
+
+```bash
+  git clone https://github.com/LucasViniciusBermudes/Angular-SmartFit-Challenge.git
+  cd angular-smartfit-challenge
+
+```
+
+2. Instale as dependências
+
+```bash
+  npm install
+```
+
+3. Inicie a aplicação
+
+```bash
+  npm start
+```
